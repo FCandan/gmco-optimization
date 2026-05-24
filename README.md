@@ -12,3 +12,13 @@ An academic and production-ready Python implementation of the **Goat-Mule Climbi
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
+   python main_run.py
+
+   Integration Example
+   from mealpy_wrapper import GoatMuleClimbingOptimization
+from mealpy import Problem
+
+# Deploy GMCO directly onto your native mealpy problem architecture
+model = GoatMuleClimbingOptimization(epoch=150, pop_size=50, theta_max=15.0)
+best_agent = model.solve(your_problem_struct)
